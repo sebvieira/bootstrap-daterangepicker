@@ -252,8 +252,9 @@
             this.isMonthPick = options.isMonthPick;
             if (typeof options.startYear === 'number')
             {
+                var d = new Date();                
                 this.startYear = options.startYear;
-                this.curStartYear = this.startYear;
+                this.curStartYear = d.getFullYear();                
             }
             if (typeof options.endYear === 'number')
             {
@@ -1040,7 +1041,7 @@
                 dateHtml = monthHtml + yearHtml;
             }
 
-            html += '<th colspan="2" class="month">' + dateHtml + '</th>';
+            html += '<th colspan="2" class="month">' + yearHtml + '</th>';
             html += '<th class="next available"><i class="fa fa-' + arrow.right + ' glyphicon glyphicon-' + arrow.right + '"></i></th>';
 
             html += '</tr>';
