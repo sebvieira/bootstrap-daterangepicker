@@ -1041,7 +1041,7 @@
                 dateHtml = monthHtml + yearHtml;
             }
 
-            html += '<th colspan="2" class="month">' + yearHtml + '</th>';
+            html += '<th colspan="2" class="month">' + dateHtml + '</th>';
             html += '<th class="next available"><i class="fa fa-' + arrow.right + ' glyphicon glyphicon-' + arrow.right + '"></i></th>';
 
             html += '</tr>';
